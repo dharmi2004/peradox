@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <style>
+        body {
+            min-height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: lightgrey;
+        }
+
+        .container {
+            height: 300px;
+            margin: auto;
+            position: relative;
+            width: 90%;
+            display: grid;
+            place-items: center;
+
+        }
+
+        .slide-container {
+            display: flex;
+            width: calc(200px * 18);
+            animation: scroll 20s linear infinite;
+
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-250px * 9));
+            }
+        }
+
+        .food-img {
+            height: 600px;
+            width: 600px;
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            perspective: 100px;
+        }
+
+        img {
+            width: 320px;
+            transition: transform 1s;
+        }
+
+        img:hover {
+            transform: translateZ(20px);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="slide-container">
+            <div class="food-img">
+                <img src="https://media.istockphoto.com/id/1308610687/photo/moong-dal-halwa-or-mung-daal-halva-is-an-indian-traditional-dessert-served-in-a-bowl.jpg?s=612x612&w=0&k=20&c=7EOudRvEg2oxoMjjW4d8KU5Cav1m2Vt-PUWx0rHVdnQ="
+                    alt="halva">
+            </div>
+            <div class="food-img">
+                <img src="https://media.istockphoto.com/id/667284124/photo/indian-vegetarian-food-dhokla-gujrati-khaman-dhokla-over-green-mat.jpg?s=612x612&w=0&k=20&c=CB2dD_3__Fq5KYt5Ds7Zue2_m1oRvzQwI5YDxQ7C7JA="
+                    alt="dhokla">
+            </div>
+            <div class="food-img">
+                <img src="https://media.istockphoto.com/id/1156463450/photo/chandrakala-sweet.jpg?s=612x612&w=0&k=20&c=A7J2Gmhz4zi9qHTAGwsKK1XVHqUjD9ouwo2u15lGsu4="
+                    alt="ghughra">
+            </div>
+            <div class="food-img">
+                <img src="https://media.istockphoto.com/id/701208704/photo/khandvi-gluten-free-indian-gujarati-snack-made-of-chickpea-flour-selective-focus.jpg?s=612x612&w=0&k=20&c=gMXrPcQhJ8Bk4wyyDqsCmfAcNFa_ANox3_jStWPdI28="
+                    alt="khandvi">
+            </div>
+            <div class="food-img">
+                <img src="https://media.istockphoto.com/id/825948572/photo/indian-famous-delicious-fenugreek-khakra-or-kasuri-methi-gujarathi-or-gujrati-snacks.jpg?s=612x612&w=0&k=20&c=6XB52m1mTOFUQENpCFm06sUPftZWTVDcRaUDZp6rWxY="
+                    alt="khakra">
+            </div>
+            <div class="food-img">
+                <img src="https://media.istockphoto.com/id/1461330398/photo/indian-spicy-food-patra-also-called-paatra-alu-vadi-or-patrode-is-a-veg-dish-in-maharashtra.jpg?s=612x612&w=0&k=20&c=onzOPErnKAoHL7a-K1MX1joqkoOwsIN9Obf1GN3vWck="
+                    alt="patra">
+            </div>
+            <div class="food-img">
+                <img src="https://media.istockphoto.com/id/1177417862/photo/undhiyu-is-a-gujarati-mixed-vegetable-dish-specialty-of-surat-india-served-in-a-bowl-with-or.jpg?s=612x612&w=0&k=20&c=IP11T9R5gAaBZwofn7m2ZlJe8w9TiRT2FBqm-sNmEeA="
+                    alt="undhiyu">
+            </div>
+            <div class="food-img">
+                <img src="https://media.istockphoto.com/id/857489850/photo/stock-photo-of-jalebi-or-jilbi-or-imarati-indian-sweet-food-fried-in-pure-ghee-selective-focus.jpg?s=612x612&w=0&k=20&c=qXvUEFSM9kERQEnfAjxDj9BH1JAgVqAj44V4IUowblg="
+                    alt="jalebi">
+            </div>
+            <div class="food-img">
+                <img src="https://media.istockphoto.com/id/1463562713/photo/indian-mithai-gud-churma-ke-laddu-or-choorma-ke-ladoo-is-made-of-whole-wheat-jada-gehun-ka.jpg?s=612x612&w=0&k=20&c=iW6QB1knmXWTvUYJoYII6MjvFW8DbwFw4UBgncgEg1c="
+                    alt="laddu">
+            </div>
+            <div class="food-img">
+                <img src="https://media.istockphoto.com/id/1257507163/photo/three-glasses-of-various-milkshakes-strawberry-chocolate-and-vanilla-milkshake-on-wooden.jpg?s=612x612&w=0&k=20&c=t0WIbx5WAQ6yD44XeuMaAdfrkfqABkplMsNlzBMD998="
+                    alt="pani puri">
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+
+</html>
